@@ -82,7 +82,19 @@ td.nm{font-weight:700}.cdot{display:inline-block;width:9px;height:9px;border-rad
   <tbody id="rows"><tr><td colspan="8" style="text-align:center;color:#9aa0b4;padding:20px">загрузка…</td></tr></tbody>
  </table></div>
 
- <h2>Ключевые слова <span id="kw-count" style="color:var(--ink2);font-weight:600;text-transform:none;letter-spacing:0"></span></h2>
+ <h2>🔍 Поисковые запросы — по каким фразам вас находят <span id="q-count" style="color:var(--ink2);font-weight:600;text-transform:none;letter-spacing:0"></span></h2>
+ <div class="card" style="padding:12px">
+  <input id="q-search" placeholder="поиск по запросу…" style="width:100%;padding:10px 13px;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:13px;margin-bottom:10px;outline:none">
+  <div style="max-height:420px;overflow-y:auto;border:1px solid var(--line);border-radius:10px">
+   <table style="min-width:600px"><thead><tr>
+    <th style="position:sticky;top:0;z-index:1">Что искали в Яндексе</th><th style="position:sticky;top:0">Кампания</th>
+    <th style="position:sticky;top:0">Показы</th><th style="position:sticky;top:0">Клики</th><th style="position:sticky;top:0">CTR</th><th style="position:sticky;top:0">Расход ₽</th>
+   </tr></thead><tbody id="q-rows"></tbody></table>
+  </div>
+  <div style="font-size:11px;color:var(--ink2);margin-top:8px">Это реальные фразы, которые люди вводили в Яндексе перед показом вашей рекламы. Нерелевантные фразы стоит добавить в минус-слова.</div>
+ </div>
+
+ <h2>Наши ключевые слова (семантика) <span id="kw-count" style="color:var(--ink2);font-weight:600;text-transform:none;letter-spacing:0"></span></h2>
  <div class="card" style="padding:12px">
   <input id="kw-search" placeholder="поиск по ключевому слову…" style="width:100%;padding:10px 13px;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:13px;margin-bottom:10px;outline:none">
   <div style="max-height:360px;overflow-y:auto;border:1px solid var(--line);border-radius:10px">
@@ -148,9 +160,22 @@ async function load(){
  document.getElementById('m-vt').textContent=M.visits_today||0;
  document.getElementById('m-ut').textContent=M.users_today||0;
  document.getElementById('m-vw').textContent=M.visits_week||0;
- // ключевые слова
- const KW=d.keywords||[];
  const campColor={}; d.campaigns.forEach((c,i)=>campColor[c.name]=PAL[i%PAL.length]);
+ // поисковые запросы (по которым нас находят)
+ const Q=d.queries||[];
+ document.getElementById('q-count').textContent='('+Q.length+')';
+ function renderQ(s){
+  s=(s||'').toLowerCase();
+  const rows=Q.filter(x=>!s||x.q.toLowerCase().indexOf(s)>-1).map(x=>`<tr>
+   <td class="nm">${x.q}</td>
+   <td style="text-align:left"><span class="cdot" style="background:${campColor[x.camp]||'#ccc'}"></span>${x.camp}</td>
+   <td>${money(x.imps)}</td><td>${x.clicks}</td><td>${x.ctr?x.ctr+'%':'–'}</td><td>${money(x.cost)}</td></tr>`).join('');
+  document.getElementById('q-rows').innerHTML=rows||'<tr><td colspan="6" style="text-align:center;color:#9aa0b4;padding:16px">запросов пока нет, появятся по мере показов</td></tr>';
+ }
+ renderQ(document.getElementById('q-search').value);
+ document.getElementById('q-search').oninput=e=>renderQ(e.target.value);
+ // ключевые слова (наша семантика)
+ const KW=d.keywords||[];
  document.getElementById('kw-count').textContent='('+KW.length+')';
  function kwName(k){return k.kw.indexOf('---autotargeting')>-1?'🎯 Автотаргетинг':k.kw}
  function renderKW(q){
