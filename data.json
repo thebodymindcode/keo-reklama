@@ -1,0 +1,133 @@
+{
+ "updated": "12.07.2026 06:26",
+ "campaigns": [
+  {
+   "id": "712728614",
+   "name": "КРТ · изъятие",
+   "state": "ON",
+   "status": "ACCEPTED",
+   "clar": "Показы начнутся в 8:00",
+   "week": 7000.0,
+   "today": {
+    "imps": 1,
+    "clicks": 0,
+    "cost": 0.0,
+    "ctr": 0.0
+   },
+   "w": {
+    "imps": 1,
+    "clicks": 0,
+    "cost": 0.0,
+    "ctr": 0.0
+   }
+  },
+  {
+   "id": "712728617",
+   "name": "Росреестр · приостановки",
+   "state": "ON",
+   "status": "ACCEPTED",
+   "clar": "Показы начнутся в 8:00",
+   "week": 7000.0,
+   "today": {
+    "imps": 11,
+    "clicks": 2,
+    "cost": 106.8,
+    "ctr": 18.18
+   },
+   "w": {
+    "imps": 11,
+    "clicks": 2,
+    "cost": 106.8,
+    "ctr": 18.18
+   }
+  },
+  {
+   "id": "712728618",
+   "name": "ДГИ · выкуп 159-ФЗ",
+   "state": "ON",
+   "status": "ACCEPTED",
+   "clar": "Показы начнутся в 8:00",
+   "week": 7000.0,
+   "today": {
+    "imps": 12,
+    "clicks": 0,
+    "cost": 0.0,
+    "ctr": 0.0
+   },
+   "w": {
+    "imps": 12,
+    "clicks": 0,
+    "cost": 0.0,
+    "ctr": 0.0
+   }
+  },
+  {
+   "id": "712728622",
+   "name": "Смена ВРИ участка",
+   "state": "ON",
+   "status": "ACCEPTED",
+   "clar": "Показы начнутся в 8:00",
+   "week": 7000.0,
+   "today": {
+    "imps": 126,
+    "clicks": 3,
+    "cost": 203.0,
+    "ctr": 2.38
+   },
+   "w": {
+    "imps": 126,
+    "clicks": 3,
+    "cost": 203.0,
+    "ctr": 2.38
+   }
+  },
+  {
+   "id": "712729532",
+   "name": "Легализация 819-ПП v3",
+   "state": "ON",
+   "status": "ACCEPTED",
+   "clar": "Показы начнутся в 8:00",
+   "week": 7000.0,
+   "today": {
+    "imps": 0,
+    "clicks": 0,
+    "cost": 0,
+    "ctr": 0
+   },
+   "w": {
+    "imps": 0,
+    "clicks": 0,
+    "cost": 0,
+    "ctr": 0
+   }
+  }
+ ],
+ "totals": {
+  "today_clicks": 5,
+  "today_cost": 309.8,
+  "today_imps": 150,
+  "week_cost": 309.8,
+  "week_clicks": 5,
+  "budget_week": 35000.0
+ },
+ "metrika": {
+  "visits_today": 8.0,
+  "users_today": 7.0,
+  "form": 0.0,
+  "callback": 0.0,
+  "quiz": 0.0,
+  "phone": 0.0,
+  "visits_week": 18.0,
+  "users_week": 15.0,
+  "sources": [
+   {
+    "name": "Ad traffic",
+    "v": 6.0
+   },
+   {
+    "name": "Direct traffic",
+    "v": 2.0
+   }
+  ]
+ }
+}

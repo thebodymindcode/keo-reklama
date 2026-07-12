@@ -1,0 +1,103 @@
+<!doctype html><html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KEO GROUP · Реклама, дашборд</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d2129;--ink2:#6d758d;--or:#ef7320;--line:#e8eaf2;--bg:#f4f6f9;--card:#fff;--dark:#22262e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Montserrat,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.45;padding:18px}
+.wrap{max-width:1080px;margin:0 auto}
+.top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.brand{font-size:17px;font-weight:800;letter-spacing:.04em}.brand b{color:var(--or)}
+.upd{font-size:12px;color:var(--ink2)}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2ec16b;margin-right:5px;animation:p 2s infinite}
+@keyframes p{50%{opacity:.35}}
+h2{font-size:14px;font-weight:800;margin:22px 0 11px;padding-top:11px;border-top:3px solid var(--or)}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:16px}
+.tile b{display:block;font-size:27px;font-weight:800}.tile span{font-size:12px;color:var(--ink2)}
+.tile.d{background:var(--dark);color:#fff}.tile.d b{color:var(--or)}.tile.d span{color:#c4c9d2}
+.tbl{background:var(--card);border:1px solid var(--line);border-radius:15px;overflow:hidden}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:#f7f8fa;text-align:right;padding:10px 12px;font-size:10.5px;font-weight:700;color:var(--ink2);text-transform:uppercase;letter-spacing:.03em}
+th:first-child,td:first-child{text-align:left}
+td{padding:11px 12px;border-top:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums}
+td.nm{font-weight:700}
+.st{display:inline-block;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px}
+.st.on{background:#e6f7ee;color:#1f9d55}.st.off{background:#fdeaea;color:#e5484d}.st.pause{background:#eef0f4;color:#6d758d}
+.bar{height:6px;background:#f1f2f6;border-radius:4px;margin-top:5px;overflow:hidden}.bar i{display:block;height:100%;background:var(--or)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:16px}
+.card h3{font-size:12.5px;margin-bottom:10px}
+.goal{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px}
+.goal b{font-size:16px}
+.foot{text-align:center;color:var(--ink2);font-size:11px;margin-top:20px}
+@media(max-width:720px){.tiles{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}th.hide,td.hide{display:none}}
+</style></head><body><div class="wrap">
+ <div class="top">
+  <div class="brand">KEO <b>GROUP</b> · реклама</div>
+  <div class="upd"><span class="dot"></span>обновлено <span id="upd">…</span></div>
+ </div>
+
+ <div class="tiles">
+  <div class="tile d"><b id="t-clicks">–</b><span>кликов сегодня</span></div>
+  <div class="tile"><b id="t-cost">–</b><span>расход сегодня, ₽</span></div>
+  <div class="tile"><b id="t-imps">–</b><span>показов сегодня</span></div>
+  <div class="tile"><b id="t-leads">–</b><span>заявок сегодня</span></div>
+ </div>
+
+ <h2>Кампании</h2>
+ <div class="tbl"><table>
+  <thead><tr><th>Кампания</th><th>Статус</th><th class="hide">Показы</th><th>Клики</th><th class="hide">CTR</th><th>Расход ₽</th><th>Бюджет/нед</th></tr></thead>
+  <tbody id="rows"><tr><td colspan="7" style="text-align:center;color:#9aa0b4;padding:20px">загрузка…</td></tr></tbody>
+ </table></div>
+
+ <h2>Заявки и трафик на сайте</h2>
+ <div class="grid2">
+  <div class="card"><h3>Цели Метрики сегодня</h3>
+   <div class="goal"><span>📝 Заявка с формы</span><b id="g-form">–</b></div>
+   <div class="goal"><span>📞 Обратный звонок</span><b id="g-call">–</b></div>
+   <div class="goal"><span>🧩 Квиз пройден</span><b id="g-quiz">–</b></div>
+   <div class="goal" style="border:0"><span>☎️ Клик по телефону</span><b id="g-phone">–</b></div>
+  </div>
+  <div class="card"><h3>Посетители сайта</h3>
+   <div class="goal"><span>Визитов сегодня</span><b id="m-vt">–</b></div>
+   <div class="goal"><span>Визитов за 7 дней</span><b id="m-vw">–</b></div>
+   <div class="goal" style="border:0;display:block"><span style="color:#6d758d">Источники сегодня</span><div id="m-src" style="margin-top:6px;font-size:12.5px"></div></div>
+  </div>
+ </div>
+
+ <div class="foot">Данные из Яндекс.Директа и Метрики (счётчик 110603522) · страница сама обновляется каждые 3 минуты · расписание показов 8:00–21:00</div>
+</div>
+<script>
+function money(n){return (n||0).toLocaleString('ru-RU',{maximumFractionDigits:0})}
+function stCls(c){if(c.state==='ON'&&(c.status==='ACCEPTED'))return c.clar&&c.clar.indexOf('нет')>-1?['off','нет объявл.']:['on','работает'];if(c.state==='SUSPENDED')return['pause','стоп'];if(c.status==='MODERATION')return['pause','модерация'];return['off',c.status]}
+async function load(){
+ try{
+  const d=await (await fetch('data.json?_='+Date.now())).json();
+  document.getElementById('upd').textContent=d.updated;
+  document.getElementById('t-clicks').textContent=d.totals.today_clicks;
+  document.getElementById('t-cost').textContent=money(d.totals.today_cost);
+  document.getElementById('t-imps').textContent=money(d.totals.today_imps);
+  const leads=(d.metrika.form||0)+(d.metrika.callback||0)+(d.metrika.quiz||0);
+  document.getElementById('t-leads').textContent=leads;
+  const mx=Math.max(1,...d.campaigns.map(c=>c.week||0));
+  document.getElementById('rows').innerHTML=d.campaigns.map(c=>{
+   const [cls,lbl]=stCls(c);
+   return `<tr><td class="nm">${c.name}<div class="bar"><i style="width:${Math.round((c.week||0)/mx*100)}%"></i></div></td>
+   <td><span class="st ${cls}">${lbl}</span></td>
+   <td class="hide">${money(c.today.imps)}</td><td>${c.today.clicks}</td>
+   <td class="hide">${c.today.ctr}%</td><td>${money(c.today.cost)}</td>
+   <td>${money(c.week)} ₽</td></tr>`}).join('');
+  document.getElementById('g-form').textContent=d.metrika.form||0;
+  document.getElementById('g-call').textContent=d.metrika.callback||0;
+  document.getElementById('g-quiz').textContent=d.metrika.quiz||0;
+  document.getElementById('g-phone').textContent=d.metrika.phone||0;
+  document.getElementById('m-vt').textContent=d.metrika.visits_today||0;
+  document.getElementById('m-vw').textContent=d.metrika.visits_week||0;
+  document.getElementById('m-src').innerHTML=(d.metrika.sources||[]).map(s=>`${s.name}: <b>${s.v}</b>`).join('<br>')||'—';
+ }catch(e){document.getElementById('upd').textContent='ошибка загрузки'}
+}
+load();setInterval(load,180000);
+</script>
+</body></html>
