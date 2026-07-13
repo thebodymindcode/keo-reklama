@@ -1,5 +1,5 @@
 {
- "updated": "13.07.2026 12:01",
+ "updated": "13.07.2026 12:32",
  "campaigns": [
   {
    "id": "712728614",
@@ -53,17 +53,17 @@
    "clar": "Средства на счете закончились",
    "week": 3500.0,
    "today": {
-    "imps": 42,
+    "imps": 43,
     "clicks": 0,
     "cost": 0.0,
     "ctr": 0.0,
     "cpc": 0
    },
    "w": {
-    "imps": 361,
+    "imps": 362,
     "clicks": 16,
     "cost": 2527.74,
-    "ctr": 4.43,
+    "ctr": 4.42,
     "cpc": 158.0
    }
   },
@@ -115,7 +115,7 @@
  "totals": {
   "today_clicks": 6,
   "today_cost": 267.37,
-  "today_imps": 268,
+  "today_imps": 269,
   "week_cost": 7313.27,
   "week_clicks": 74,
   "budget_week": 17500.0
@@ -159,7 +159,7 @@
   },
   {
    "date": "07-13",
-   "imps": 268,
+   "imps": 269,
    "clicks": 6,
    "cost": 267.36
   }
@@ -9400,6 +9400,14 @@
    "ctr": 0.0
   },
   {
+   "q": "арбитражный суд москвы",
+   "camp": "ДГИ · выкуп 159-ФЗ",
+   "imps": 5,
+   "clicks": 0,
+   "cost": 0.0,
+   "ctr": 0.0
+  },
+  {
    "q": "росреестр отказывается регистрировать земельный участок в собственность хотя имеется действующее решение суда",
    "camp": "Росреестр · приостановки",
    "imps": 4,
@@ -9570,14 +9578,6 @@
   {
    "q": "как снести часть дома отдельно выделенного",
    "camp": "Легализация 819-ПП v3",
-   "imps": 4,
-   "clicks": 0,
-   "cost": 0.0,
-   "ctr": 0.0
-  },
-  {
-   "q": "арбитражный суд москвы",
-   "camp": "ДГИ · выкуп 159-ФЗ",
    "imps": 4,
    "clicks": 0,
    "cost": 0.0,
@@ -16865,22 +16865,22 @@
   }
  ],
  "metrika": {
-  "visits_today": 10.0,
-  "users_today": 10.0,
+  "visits_today": 11.0,
+  "users_today": 11.0,
   "form": 0.0,
   "callback": 0.0,
   "quiz": 0.0,
   "phone": 0.0,
-  "visits_week": 114.0,
-  "users_week": 103.0,
+  "visits_week": 115.0,
+  "users_week": 104.0,
   "sources": [
    {
-    "name": "Ad traffic",
+    "name": "Search engine traffic",
     "v": 5.0
    },
    {
-    "name": "Search engine traffic",
-    "v": 4.0
+    "name": "Ad traffic",
+    "v": 5.0
    },
    {
     "name": "Direct traffic",
