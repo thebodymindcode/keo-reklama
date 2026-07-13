@@ -1,5 +1,5 @@
 {
- "updated": "13.07.2026 20:45",
+ "updated": "13.07.2026 21:00",
  "campaigns": [
   {
    "id": "712728614",
@@ -97,14 +97,14 @@
    "clar": "Показы начнутся завтра в 8:00",
    "week": 3500.0,
    "today": {
-    "imps": 1538,
+    "imps": 1539,
     "clicks": 31,
     "cost": 991.55,
-    "ctr": 2.02,
+    "ctr": 2.01,
     "cpc": 32.0
    },
    "w": {
-    "imps": 1621,
+    "imps": 1622,
     "clicks": 38,
     "cost": 1644.57,
     "ctr": 2.34,
@@ -115,7 +115,7 @@
  "totals": {
   "today_clicks": 189,
   "today_cost": 6181.06,
-  "today_imps": 5768,
+  "today_imps": 5769,
   "week_cost": 13226.96,
   "week_clicks": 257,
   "budget_week": 17500.0
@@ -159,7 +159,7 @@
   },
   {
    "date": "07-13",
-   "imps": 5768,
+   "imps": 5769,
    "clicks": 189,
    "cost": 6181.06
   }
@@ -32600,6 +32600,14 @@
    "ctr": 0.0
   },
   {
+   "q": "гаражная амнистия 2026 как оформить хозблок сарай в собственность хозблочный кооператив землеотведение общее",
+   "camp": "Легализация 819-ПП v3",
+   "imps": 1,
+   "clicks": 0,
+   "cost": 0.0,
+   "ctr": 0.0
+  },
+  {
    "q": "гаражная амнистия 2028",
    "camp": "Легализация 819-ПП v3",
    "imps": 1,
@@ -41545,18 +41553,18 @@
   }
  ],
  "metrika": {
-  "visits_today": 188.0,
-  "users_today": 182.0,
+  "visits_today": 191.0,
+  "users_today": 185.0,
   "form": 0.0,
   "callback": 0.0,
   "quiz": 0.0,
   "phone": 1.0,
-  "visits_week": 292.0,
-  "users_week": 275.0,
+  "visits_week": 295.0,
+  "users_week": 278.0,
   "sources": [
    {
     "name": "Ad traffic",
-    "v": 178.0
+    "v": 181.0
    },
    {
     "name": "Direct traffic",
