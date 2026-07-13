@@ -1,10 +1,10 @@
 {
- "updated": "13.07.2026 11:14",
+ "updated": "13.07.2026 11:30",
  "campaigns": [
   {
    "id": "712728614",
    "name": "КРТ · изъятие",
-   "state": "ON",
+   "state": "OFF",
    "status": "ACCEPTED",
    "clar": "Средства на счете закончились",
    "week": 3500.0,
@@ -26,7 +26,7 @@
   {
    "id": "712728617",
    "name": "Росреестр · приостановки",
-   "state": "ON",
+   "state": "OFF",
    "status": "ACCEPTED",
    "clar": "Средства на счете закончились",
    "week": 3500.0,
@@ -48,7 +48,7 @@
   {
    "id": "712728618",
    "name": "ДГИ · выкуп 159-ФЗ",
-   "state": "ON",
+   "state": "OFF",
    "status": "ACCEPTED",
    "clar": "Средства на счете закончились",
    "week": 3500.0,
@@ -70,7 +70,7 @@
   {
    "id": "712728622",
    "name": "Смена ВРИ участка",
-   "state": "ON",
+   "state": "OFF",
    "status": "ACCEPTED",
    "clar": "Средства на счете закончились",
    "week": 3500.0,
@@ -92,7 +92,7 @@
   {
    "id": "712729532",
    "name": "Легализация 819-ПП v3",
-   "state": "ON",
+   "state": "OFF",
    "status": "ACCEPTED",
    "clar": "Средства на счете закончились",
    "week": 3500.0,
@@ -16865,14 +16865,14 @@
   }
  ],
  "metrika": {
-  "visits_today": 7.0,
-  "users_today": 7.0,
+  "visits_today": 10.0,
+  "users_today": 10.0,
   "form": 0.0,
   "callback": 0.0,
   "quiz": 0.0,
   "phone": 0.0,
-  "visits_week": 111.0,
-  "users_week": 101.0,
+  "visits_week": 114.0,
+  "users_week": 103.0,
   "sources": [
    {
     "name": "Ad traffic",
@@ -16880,7 +16880,11 @@
    },
    {
     "name": "Search engine traffic",
-    "v": 2.0
+    "v": 4.0
+   },
+   {
+    "name": "Direct traffic",
+    "v": 1.0
    }
   ]
  }
