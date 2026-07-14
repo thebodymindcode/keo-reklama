@@ -1,19 +1,19 @@
 {
- "updated": "14.07.2026 23:53",
+ "updated": "15.07.2026 00:09",
  "campaigns": [
   {
    "id": "712728614",
    "name": "КРТ · изъятие",
    "state": "ON",
    "status": "ACCEPTED",
-   "clar": "Показы начнутся завтра в 8:00",
+   "clar": "Показы начнутся в 8:00",
    "week": 3500.0,
    "today": {
-    "imps": 439,
-    "clicks": 28,
-    "cost": 1476.83,
-    "ctr": 6.38,
-    "cpc": 53.0
+    "imps": 0,
+    "clicks": 0,
+    "cost": 0,
+    "ctr": 0,
+    "cpc": 0
    },
    "w": {
     "imps": 837,
@@ -28,14 +28,14 @@
    "name": "Росреестр · приостановки",
    "state": "ON",
    "status": "ACCEPTED",
-   "clar": "Показы начнутся завтра в 8:00",
+   "clar": "Показы начнутся в 8:00",
    "week": 3500.0,
    "today": {
-    "imps": 1533,
-    "clicks": 50,
-    "cost": 1478.57,
-    "ctr": 3.26,
-    "cpc": 30.0
+    "imps": 0,
+    "clicks": 0,
+    "cost": 0,
+    "ctr": 0,
+    "cpc": 0
    },
    "w": {
     "imps": 2955,
@@ -50,14 +50,14 @@
    "name": "ДГИ · выкуп 159-ФЗ",
    "state": "ON",
    "status": "ACCEPTED",
-   "clar": "Показы начнутся завтра в 8:00",
+   "clar": "Показы начнутся в 8:00",
    "week": 3500.0,
    "today": {
-    "imps": 1167,
-    "clicks": 41,
-    "cost": 1441.64,
-    "ctr": 3.51,
-    "cpc": 35.0
+    "imps": 0,
+    "clicks": 0,
+    "cost": 0,
+    "ctr": 0,
+    "cpc": 0
    },
    "w": {
     "imps": 2467,
@@ -72,14 +72,14 @@
    "name": "Смена ВРИ участка",
    "state": "ON",
    "status": "ACCEPTED",
-   "clar": "Показы начнутся завтра в 8:00",
+   "clar": "Показы начнутся в 8:00",
    "week": 3500.0,
    "today": {
-    "imps": 4120,
-    "clicks": 59,
-    "cost": 1269.43,
-    "ctr": 1.43,
-    "cpc": 22.0
+    "imps": 0,
+    "clicks": 0,
+    "cost": 0,
+    "ctr": 0,
+    "cpc": 0
    },
    "w": {
     "imps": 6670,
@@ -94,14 +94,14 @@
    "name": "Легализация 819-ПП v3",
    "state": "ON",
    "status": "ACCEPTED",
-   "clar": "Показы начнутся завтра в 8:00",
+   "clar": "Показы начнутся в 8:00",
    "week": 3500.0,
    "today": {
-    "imps": 1141,
-    "clicks": 28,
-    "cost": 1346.46,
-    "ctr": 2.45,
-    "cpc": 48.0
+    "imps": 0,
+    "clicks": 0,
+    "cost": 0,
+    "ctr": 0,
+    "cpc": 0
    },
    "w": {
     "imps": 2763,
@@ -113,20 +113,14 @@
   }
  ],
  "totals": {
-  "today_clicks": 206,
-  "today_cost": 7012.93,
-  "today_imps": 8400,
+  "today_clicks": 0,
+  "today_cost": 0,
+  "today_imps": 0,
   "week_cost": 20239.9,
   "week_clicks": 463,
   "budget_week": 17500.0
  },
  "daily": [
-  {
-   "date": "07-08",
-   "imps": 1640,
-   "clicks": 32,
-   "cost": 2587.74
-  },
   {
    "date": "07-09",
    "imps": 1233,
@@ -162,6 +156,12 @@
    "imps": 8400,
    "clicks": 206,
    "cost": 7012.94
+  },
+  {
+   "date": "07-15",
+   "imps": 0,
+   "clicks": 0,
+   "cost": 0
   }
  ],
  "keywords": [
@@ -87705,27 +87705,14 @@
   }
  ],
  "metrika": {
-  "visits_today": 221.0,
-  "users_today": 208.0,
+  "visits_today": 0.0,
+  "users_today": 0.0,
   "form": 0.0,
   "callback": 0.0,
   "quiz": 0.0,
   "phone": 0.0,
   "visits_week": 520.0,
   "users_week": 484.0,
-  "sources": [
-   {
-    "name": "Ad traffic",
-    "v": 208.0
-   },
-   {
-    "name": "Direct traffic",
-    "v": 7.0
-   },
-   {
-    "name": "Search engine traffic",
-    "v": 6.0
-   }
-  ]
+  "sources": []
  }
 }
