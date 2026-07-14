@@ -1,5 +1,5 @@
 {
- "updated": "15.07.2026 02:31",
+ "updated": "15.07.2026 02:47",
  "campaigns": [
   {
    "id": "712728614",
@@ -87705,14 +87705,19 @@
   }
  ],
  "metrika": {
-  "visits_today": 0.0,
-  "users_today": 0.0,
+  "visits_today": 1.0,
+  "users_today": 1.0,
   "form": 0.0,
   "callback": 0.0,
   "quiz": 0.0,
   "phone": 0.0,
-  "visits_week": 520.0,
-  "users_week": 484.0,
-  "sources": []
+  "visits_week": 521.0,
+  "users_week": 485.0,
+  "sources": [
+   {
+    "name": "Link traffic",
+    "v": 1.0
+   }
+  ]
  }
 }
