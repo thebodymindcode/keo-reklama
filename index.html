@@ -66,6 +66,21 @@ td.nm{font-weight:700}.cdot{display:inline-block;width:9px;height:9px;border-rad
   <div class="fstep"><div class="fi">✅</div><div class="fv" id="f-leads">–</div><div class="fl">заявок и звонков</div></div>
  </div>
 
+ <h2>Звонки (телефония Сипуни)</h2>
+ <div id="calls-wrap">
+  <div class="tiles" style="grid-template-columns:repeat(4,1fr)">
+   <div class="tile d"><b id="c-week">–</b><span>звонков за 7 дней</span></div>
+   <div class="tile"><b id="c-in">–</b><span>входящих</span></div>
+   <div class="tile"><b id="c-ans">–</b><span>отвечено</span></div>
+   <div class="tile" id="c-miss-tile"><b id="c-miss">–</b><span>пропущено (потерянные лиды)</span></div>
+  </div>
+  <div class="card" style="margin-top:12px"><h3>Последние звонки</h3>
+   <div class="tbl" style="border:0"><table style="min-width:520px"><thead><tr>
+    <th>Время</th><th>Тип</th><th>Статус</th><th>Номер</th><th>Разговор</th></tr></thead>
+    <tbody id="c-recent"></tbody></table></div>
+  </div>
+ </div>
+
  <h2>Динамика и структура</h2>
  <div class="grid3">
   <div class="card"><h3>Клики и расход по дням (7 дней)</h3><div class="chartbox"><canvas id="trend"></canvas></div></div>
@@ -160,6 +175,24 @@ async function load(){
  document.getElementById('m-vt').textContent=M.visits_today||0;
  document.getElementById('m-ut').textContent=M.users_today||0;
  document.getElementById('m-vw').textContent=M.visits_week||0;
+ // звонки
+ const C=d.calls;
+ if(C){
+  document.getElementById('calls-wrap').style.display='';
+  document.getElementById('c-week').textContent=C.week_total;
+  document.getElementById('c-in').textContent=C.week_in;
+  document.getElementById('c-ans').textContent=C.week_answered;
+  document.getElementById('c-miss').textContent=C.week_missed;
+  const mt=document.getElementById('c-miss-tile');
+  if(C.week_missed>0){mt.style.background='#fdeaea';mt.style.borderColor='#f4b8b8';document.getElementById('c-miss').style.color='#e5484d';}
+  const di={'Входящий':'⬇ входящий','Исходящий':'⬆ исходящий','Внутренний':'↔ внутр'};
+  document.getElementById('c-recent').innerHTML=(C.recent||[]).map(r=>{
+   const miss=r.status==='Не отвечен';
+   const dur=parseInt(r.dur||0); const dm=dur>=60?Math.floor(dur/60)+'м '+(dur%60)+'с':dur+'с';
+   return `<tr><td style="text-align:left">${r.time}</td><td style="text-align:left">${di[r.dir]||r.dir}</td>
+   <td><span class="st ${miss?'off':'on'}">${r.status}</span></td>
+   <td>${r.num}</td><td>${miss?'–':dm}</td></tr>`}).join('')||'<tr><td colspan="5" style="text-align:center;color:#9aa0b4;padding:14px">звонков нет</td></tr>';
+ } else { document.getElementById('calls-wrap').style.display='none'; }
  const campColor={}; d.campaigns.forEach((c,i)=>campColor[c.name]=PAL[i%PAL.length]);
  // поисковые запросы (по которым нас находят)
  const Q=d.queries||[];
